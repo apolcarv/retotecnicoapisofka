@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ManagementTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ManagementTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/api.html">api</a> &gt; ManagementTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">7.020s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testParallel()</td>
+<td class="success">7.020s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>06:25:15.684 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1708428315681
+06:25:15.704 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+06:25:17.795 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 &gt; POST https://api.demoblaze.com/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 50
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;pepito777&quot;,&quot;password&quot;:&quot;VGVzdDQ1Nis=&quot;}
+
+06:25:17.795 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; POST https://api.demoblaze.com/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 24
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;pepito777&quot;}
+
+06:25:17.795 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;pepito565&quot;,&quot;password&quot;:&quot;VGVzdDQ1Nis==&quot;}
+
+06:25:17.795 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 &gt; POST https://api.demoblaze.com/signup
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: api.demoblaze.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;pepito002&quot;,&quot;password&quot;:&quot;VGVzdDQ1Nis==&quot;}
+
+06:25:18.451 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 652
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 8855b57345a541359a4d4eb9bf734455
+1 &lt; Date: Tue, 20 Feb 2024 11:25:18 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;Bad parameter, missing username&quot;}
+
+
+06:25:18.451 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 650
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: 9a8402dfab69e95852e300d96d9dade5
+1 &lt; Date: Tue, 20 Feb 2024 11:25:18 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;This user already exist.&quot;}
+
+
+06:25:18.451 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 652
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cloud-Trace-Context: d651c96965e2585c8a0d8aff2a7a76d4
+1 &lt; Date: Tue, 20 Feb 2024 11:25:18 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Cache-Control: private
+1 &lt; Transfer-Encoding: chunked
+{&quot;errorMessage&quot;:&quot;Wrong password.&quot;}
+
+
+06:25:18.465 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 668
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; X-Cloud-Trace-Context: 84c64a59e00cb67ade5b81e989bdabfb
+1 &lt; Date: Tue, 20 Feb 2024 11:25:18 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 3
+&quot;&quot;
+
+
+---------------------------------------------------------
+feature: classpath:api/post/post-login.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 2,8007
+---------------------------------------------------------
+
+06:25:19.666 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 1 of 2 (1 remaining) classpath:api/post/post-login.feature
+---------------------------------------------------------
+feature: classpath:api/post/post-register.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 2,7506
+---------------------------------------------------------
+
+06:25:19.819 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 2 of 2 (0 remaining) classpath:api/post/post-register.feature
+Karate version: 1.2.0
+======================================================
+elapsed:   5,47 | threads:    4 | thread time: 5,55 
+features:     2 | skipped:    0 | efficiency: 0,25
+scenarios:    4 | passed:     4 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.2.0
+file:///C:/GeneralAutomation/retotecnicoapisofka/build/karate-reports/karate-summary.html
+===================================================================
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>feb. 20, 2024 6:25:20 A. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\GeneralAutomation\retotecnicoapisofka\build\karate-reports\api.post.post-login.json' contains 1 features
+feb. 20, 2024 6:25:20 A. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\GeneralAutomation\retotecnicoapisofka\build\karate-reports\api.post.post-register.json' contains 1 features
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at 20/02/2024, 6:25:21 a. m.</p>
+</div>
+</div>
+</body>
+</html>

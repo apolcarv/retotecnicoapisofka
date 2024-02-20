@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="api.ManagementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-20T11:25:14" hostname="APOLCARV" time="7.02">
+  <properties/>
+  <testcase name="testParallel()" classname="api.ManagementTest" time="7.02"/>
+  <system-out><![CDATA[06:25:15.684 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1708428315681
+06:25:15.704 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+06:25:17.795 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"username":"pepito777","password":"VGVzdDQ1Nis="}
+
+06:25:17.795 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"username":"pepito777"}
+
+06:25:17.795 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"username":"pepito565","password":"VGVzdDQ1Nis=="}
+
+06:25:17.795 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"username":"pepito002","password":"VGVzdDQ1Nis=="}
+
+06:25:18.451 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 652
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 8855b57345a541359a4d4eb9bf734455
+1 < Date: Tue, 20 Feb 2024 11:25:18 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Bad parameter, missing username"}
+
+
+06:25:18.451 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 650
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: 9a8402dfab69e95852e300d96d9dade5
+1 < Date: Tue, 20 Feb 2024 11:25:18 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+06:25:18.451 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 652
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: d651c96965e2585c8a0d8aff2a7a76d4
+1 < Date: Tue, 20 Feb 2024 11:25:18 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+06:25:18.465 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 668
+1 < 200
+1 < Content-Type: application/json
+1 < X-Cloud-Trace-Context: 84c64a59e00cb67ade5b81e989bdabfb
+1 < Date: Tue, 20 Feb 2024 11:25:18 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+---------------------------------------------------------
+feature: classpath:api/post/post-login.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 2,8007
+---------------------------------------------------------
+
+06:25:19.666 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:api/post/post-login.feature
+---------------------------------------------------------
+feature: classpath:api/post/post-register.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 2,7506
+---------------------------------------------------------
+
+06:25:19.819 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:api/post/post-register.feature
+Karate version: 1.2.0
+======================================================
+elapsed:   5,47 | threads:    4 | thread time: 5,55 
+features:     2 | skipped:    0 | efficiency: 0,25
+scenarios:    4 | passed:     4 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.2.0
+file:///C:/GeneralAutomation/retotecnicoapisofka/build/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  <system-err><![CDATA[feb. 20, 2024 6:25:20 A. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\GeneralAutomation\retotecnicoapisofka\build\karate-reports\api.post.post-login.json' contains 1 features
+feb. 20, 2024 6:25:20 A. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\GeneralAutomation\retotecnicoapisofka\build\karate-reports\api.post.post-register.json' contains 1 features
+]]></system-err>
+</testsuite>
